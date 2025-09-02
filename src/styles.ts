@@ -6,16 +6,19 @@ const EstiloGlobal = createGlobalStyle`
     padding: 0;
     font-family: 'Inter', sans-serif;
     list-style: none;
-}
+  }
 
   body {
-  padding-top: 80px;
-  padding-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: ${(props) => props.theme.corDeFundo};
 
-  @media (max-width: 768px) {
-    padding: 16px;
+    @media (max-width: 768px) {
+      padding: 16px;
+    }
   }
 `
+
 export default EstiloGlobal
 
 export const Container = styled.div`
